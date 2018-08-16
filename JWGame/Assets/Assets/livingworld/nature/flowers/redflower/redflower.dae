@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0</authoring_tool>
+    </contributor>
+    <created>2018-08-12T20:12:16</created>
+    <modified>2018-08-12T20:12:16</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="redflowerMat-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="redflowerMat-material" name="redflowerMat">
+      <instance_effect url="#redflowerMat-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="redflower-mesh" name="redflower">
+      <mesh>
+        <source id="redflower-mesh-positions">
+          <float_array id="redflower-mesh-positions-array" count="48">-0.2909377 0 0 0.2909377 0 0 -0.2909377 0 0.5818755 0.2909377 0 0.5818755 0 -0.2909377 0 0 0.2909377 0 0 -0.2909377 0.5818755 0 0.2909377 0.5818755 -0.2866764 0 0 0.2951991 0 0 -0.2866764 0 0.5818755 0.2951991 0 0.5818755 0.004261374 -0.2909377 0 0.004261374 0.2909377 0 0.004261314 -0.2909377 0.5818755 0.004261374 0.2909377 0.5818755</float_array>
+          <technique_common>
+            <accessor source="#redflower-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="redflower-mesh-normals">
+          <float_array id="redflower-mesh-normals-array" count="18">0 -1 0 1 0 0 0 1 0 -1 0 0 0 1 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#redflower-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="redflower-mesh-map-0">
+          <float_array id="redflower-mesh-map-0-array" count="48">0.9991937 -0.001356959 8.06361e-4 0.9970303 8.06361e-4 -0.001356959 0.9991937 -0.001356959 8.06361e-4 0.9970303 8.06361e-4 -0.001356959 8.06361e-4 0.9970303 0.9991937 -0.001356959 8.06361e-4 -0.001356959 8.06361e-4 0.9970303 0.9991937 -0.001356959 8.06361e-4 -0.001356959 0.9991937 -0.001356959 0.9991937 0.9970303 8.06361e-4 0.9970303 0.9991937 -0.001356959 0.9991937 0.9970303 8.06361e-4 0.9970303 8.06361e-4 0.9970303 0.9991937 0.9970303 0.9991937 -0.001356959 8.06361e-4 0.9970303 0.9991937 0.9970303 0.9991937 -0.001356959</float_array>
+          <technique_common>
+            <accessor source="#redflower-mesh-map-0-array" count="24" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="redflower-mesh-vertices">
+          <input semantic="POSITION" source="#redflower-mesh-positions"/>
+        </vertices>
+        <triangles material="redflowerMat-material" count="8">
+          <input semantic="VERTEX" source="#redflower-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#redflower-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#redflower-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 5 1 3 6 1 4 4 1 5 10 2 6 9 2 7 8 2 8 14 3 9 13 3 10 12 3 11 1 0 12 3 0 13 2 0 14 5 1 15 7 1 16 6 1 17 10 4 18 11 4 19 9 4 20 14 5 21 15 5 22 13 5 23</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="redflower" name="redflower" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#redflower-mesh" name="redflower">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="redflowerMat-material" target="#redflowerMat-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

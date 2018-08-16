@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0</authoring_tool>
+    </contributor>
+    <created>2018-08-13T03:27:55</created>
+    <modified>2018-08-13T03:27:55</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="homeMat-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="homeMat-material" name="homeMat">
+      <instance_effect url="#homeMat-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="home-mesh" name="home">
+      <mesh>
+        <source id="home-mesh-positions">
+          <float_array id="home-mesh-positions-array" count="96">4.010405 2.248645 0 4.010402 -3.751345 0 4.010406 2.248645 2.5 2.499999 2.248645 0 2.5 2.248646 2.5 4.010406 2.248645 5.500003 2.499999 3.748645 0 2.5 3.748646 2.5 4.010406 3.748651 2.5 -2.010402 2.248646 3 -2.010406 -3.751344 4.999998 4.010406 2.248645 3 -4.010404 -3.751345 0 -2.010402 2.248646 5.500003 -4.010404 3.748645 0 -4.010402 3.748646 2.5 -4.010402 2.248646 3 -4.010406 -3.751344 4.999998 -2.010404 0.7486508 6.5 4.010405 0.7486501 6.5 -2.010404 0.7486508 8 4.010405 0.7486501 8 4.010404 -3.751344 6.999998 -2.010406 -3.751344 6.999998 4.010406 3.54865 2.5 3.8 3.748648 2.5 3.8 3.54865 2.5 4.010406 3.54865 0 4.010406 3.748651 0 3.8 3.748648 0 3.8 3.54865 0 4.010406 3.748651 2.5</float_array>
+          <technique_common>
+            <accessor source="#home-mesh-positions-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="home-mesh-normals">
+          <float_array id="home-mesh-normals-array" count="72">3.15701e-7 1 0 1.58396e-7 1 0 1 0 -5.72205e-7 1 -4.5646e-7 0 1 0 0 -1 0 8.17435e-7 0 -1 2.28407e-7 0 0.3162279 0.9486833 0 1 -3.14744e-7 -1 4.54131e-7 0 0 0.5547004 0.8320502 -1 7.67325e-7 -2.95968e-7 0 1 0 0 -0.2169311 0.976187 0 -1 1.40797e-7 1 -5.2982e-7 -3.17892e-7 1 -3.98923e-7 -1.68295e-7 -1 6.35784e-7 -3.8147e-7 0 0 -1 -1 0 0 -1.13314e-5 1 0 0 -1 0 -1.60175e-7 0.3162275 0.9486834 0 0.3162277 0.9486834</float_array>
+          <technique_common>
+            <accessor source="#home-mesh-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="home-mesh-map-0">
+          <float_array id="home-mesh-map-0-array" count="196">0.006054341 0.8164066 0.2980951 0.8164066 0.2980954 0.9928467 0.006054341 0.9928469 0.4907909 0.2113037 0.4907909 0.380801 0.08258694 0.380801 0.08258694 0.2113037 0.006758272 0.1783143 0.006758272 0.00888133 0.101466 0.00888133 0.101466 0.1783143 0.9867759 0.8098329 0.8765962 0.8832861 0.5460559 0.4058391 0.9867756 0.6261992 0.5563318 0.3094866 0.5563319 0.3817889 0.5322312 0.3094866 0.633834 0.5769302 0.5454231 0.5474599 0.5454231 0.4001085 0.9874768 0.4001085 0.542155 0.2837538 0.542155 0.007462799 0.9853706 0.007462799 0.6526714 0.2837538 0.3673638 0.5997952 0.4835933 0.599795 0.4835941 0.9673441 0.3673647 0.9673442 0.08064663 0.1774042 0.08064669 0.007907032 0.5220448 0.007907032 0.5220446 0.1774042 0.7453746 0.3064575 0.7453746 0.4007669 0.5331789 0.4479216 0.5331789 0.3771897 0.01709234 0.6135141 0.01709228 0.5087466 0.3669898 0.5087468 0.3669898 0.6135141 0.4624472 0.330035 0.4624472 0.2121484 0.7453746 0.3064575 0.5331789 0.3771897 0.08258706 0.3805491 0.4907912 0.3805491 0.4907912 0.4822475 0.08258706 0.4822475 0.3674319 0.7760795 0.01753449 0.7760795 0.01753443 0.5081842 0.3674319 0.5081843 0.9853706 0.007462799 0.9853706 0.3942703 0.6526714 0.3942702 0.6526714 0.2837538 0.9867756 0.4058389 0.9869178 0.6102128 0.9867756 0.6261992 0.5460559 0.4058391 0.8765962 0.9934662 0.5460563 0.9200129 0.5460559 0.4058391 0.8765962 0.8832861 0.9874768 0.4001085 0.9874767 0.6948112 0.633834 0.5769302 0.04126465 0.1765347 0.02776813 0.1765347 0.02776813 0.007829487 0.04126465 0.007829487 0.5563318 0.3094866 0.6291354 0.3094866 0.6291354 0.3817886 0.5563319 0.3817889 0.06895947 0.1765347 0.05546319 0.1765347 0.05546313 0.007829487 0.06895947 0.007829487 0.05546319 0.1765347 0.04126465 0.1765347 0.04126465 0.007829487 0.05546313 0.007829487 0.02776813 0.1765347 0.01356959 0.1765347 0.01356959 0.007829487 0.02776813 0.007829487 0.01746636 0.5997957 0.01746618 0.507908 0.105243 0.5079082 0.3673638 0.5997952 0.4835932 0.5079076 0.4835933 0.599795 0.3673638 0.5997952 0.105243 0.5079082</float_array>
+          <technique_common>
+            <accessor source="#home-mesh-map-0-array" count="98" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="home-mesh-vertices">
+          <input semantic="POSITION" source="#home-mesh-positions"/>
+        </vertices>
+        <polylist material="homeMat-material" count="25">
+          <input semantic="VERTEX" source="#home-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#home-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#home-mesh-map-0" offset="2" set="0"/>
+          <vcount>4 4 4 4 3 4 4 4 4 4 4 4 4 4 4 4 4 3 4 4 4 4 4 4 4 </vcount>
+          <p>3 0 0 4 0 1 2 0 2 0 0 3 9 1 4 13 1 5 5 1 6 11 1 7 4 2 8 3 2 9 6 2 10 7 2 11 5 3 12 19 3 13 1 3 14 11 3 15 2 4 16 31 4 17 11 4 18 16 5 19 15 5 20 14 5 21 12 5 22 17 6 23 12 6 24 1 6 25 10 6 26 9 7 27 16 7 28 17 7 29 10 7 30 7 8 31 6 8 32 14 8 33 15 8 34 10 9 35 23 9 36 20 9 37 18 9 38 13 10 39 18 10 40 19 10 41 5 10 42 13 11 43 9 11 44 10 11 45 18 11 46 19 12 47 18 12 48 20 12 49 21 12 50 21 13 51 20 13 52 23 13 53 22 13 54 1 14 55 22 14 56 23 14 57 10 14 58 0 15 59 2 15 60 11 15 61 1 15 62 21 16 63 22 16 64 1 16 65 19 16 66 12 17 67 17 17 68 16 17 69 8 4 70 24 4 71 27 4 72 28 4 73 2 18 74 4 18 75 7 18 76 31 18 77 26 19 78 25 19 79 29 19 80 30 19 81 25 20 82 8 20 83 28 20 84 29 20 85 24 21 86 26 21 87 30 21 88 27 21 89 11 22 90 31 22 91 7 22 92 9 22 93 15 23 94 16 23 95 9 23 96 7 23 97</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="home" name="home" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#home-mesh" name="home">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="homeMat-material" target="#homeMat-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
