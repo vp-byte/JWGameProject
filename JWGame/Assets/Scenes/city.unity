@@ -15577,6 +15577,18 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a411186f62b0f446691b792ecdcf4748, type: 2}
+    - target: {fileID: 400002, guid: a82e2b34ac04b4188ade501b9c55dddd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6910708
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a82e2b34ac04b4188ade501b9c55dddd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6910708
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a82e2b34ac04b4188ade501b9c55dddd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6910708
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82e2b34ac04b4188ade501b9c55dddd, type: 3}
   m_IsPrefabParent: 0
@@ -46477,8 +46489,8 @@ GameObject:
   - component: {fileID: 1687637266}
   - component: {fileID: 1687637265}
   m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
+  m_Name: ThirdPersonCamera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46538,13 +46550,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1687637264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.61, z: -14}
+  m_LocalRotation: {x: 0.0587284, y: -0, z: -0, w: 0.998274}
+  m_LocalPosition: {x: -0.08, y: 1.71, z: -2.9300003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1758549414}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 6.734, y: 0, z: 0}
 --- !u!1001 &1688404697
 Prefab:
   m_ObjectHideFlags: 0
@@ -49114,7 +49126,7 @@ Animator:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1758549408}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b235179bd2a63d1468dd430670338c55, type: 3}
+  m_Avatar: {fileID: 9000000, guid: a82e2b34ac04b4188ade501b9c55dddd, type: 3}
   m_Controller: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -49134,6 +49146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 391471248}
+  - {fileID: 1687637268}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
