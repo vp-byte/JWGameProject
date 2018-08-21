@@ -59,7 +59,6 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-     <Compile Include="Assets\ThirdPersonCamera\ThirdPersonCaremaFollow.cs" />
      <Compile Include="Assets\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
      <Compile Include="Assets\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
      <Compile Include="Assets\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
